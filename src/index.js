@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-//const e = React.createElement;
-
+//Each square represents a button on the calculator
 function Square(props){
 	return (
 	  <button className="square" onClick={props.onClick}>
@@ -12,6 +11,7 @@ function Square(props){
 	);
 }
 
+//The board renders each of the calculator's buttons
 class Board extends React.Component {
   
   renderSquare(buttonVal) {
@@ -57,6 +57,7 @@ class Board extends React.Component {
   }
 }
 
+//The Game stores and displays the history of the moves, along with a board
 class Game extends React.Component {
   constructor(props) {
 	  super(props);
@@ -69,16 +70,16 @@ class Game extends React.Component {
   }
   
   handleClick(buttonVal){
-	var history = this.state.history.slice();
-	var current = this.state.current;
-	var count = this.state.count;
-	var clear = this.state.clear;
+	var history = this.state.history.slice(); //represents the history of all equations
+	var current = this.state.current; 		  //represents the equation the user is currently typing
+	var count = this.state.count;  			  //represents total number of equations
+	var clear = this.state.clear;  			  //represents when we should clear the current equation
 	  
-	if (buttonVal === "C"){
+	if (buttonVal === "C"){ //Clear the current equation
 		this.setState({
 		  current: "",
 	  });
-	} else if (buttonVal === "="){
+	} else if (buttonVal === "="){ //If the user clicked equals, add the full equation to the history
 	  var answer = eval(current);
 	  current = current + "=" + answer;
 	  history = history.concat(current);
@@ -93,7 +94,7 @@ class Game extends React.Component {
 		  count: count,
 		  clear: clear,
 	  });
-	} else {
+	} else {  //Keep adding to current equation until we want to evaluate
 		if (clear){
 			current = "";
 			clear = false;
@@ -111,7 +112,7 @@ class Game extends React.Component {
 	const history = this.state.history;
 	const current = this.state.current;
 	
-	const calculations = history.slice().reverse().map(move => {
+	const calculations = history.slice().reverse().map(move => { //displays the history
 		return (
 			<div>
 				{move}
