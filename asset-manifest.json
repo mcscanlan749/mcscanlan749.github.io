@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mcscanlan749.github.io/static/css/main.330dcd2a.chunk.css",
+    "main.js": "/mcscanlan749.github.io/static/js/main.c6206f41.chunk.js",
+    "main.js.map": "/mcscanlan749.github.io/static/js/main.c6206f41.chunk.js.map",
+    "runtime-main.js": "/mcscanlan749.github.io/static/js/runtime-main.5a1c2e09.js",
+    "runtime-main.js.map": "/mcscanlan749.github.io/static/js/runtime-main.5a1c2e09.js.map",
+    "static/js/2.66198967.chunk.js": "/mcscanlan749.github.io/static/js/2.66198967.chunk.js",
+    "static/js/2.66198967.chunk.js.map": "/mcscanlan749.github.io/static/js/2.66198967.chunk.js.map",
+    "index.html": "/mcscanlan749.github.io/index.html",
+    "precache-manifest.601eb4e968b0ab6208451819e27bdb58.js": "/mcscanlan749.github.io/precache-manifest.601eb4e968b0ab6208451819e27bdb58.js",
+    "service-worker.js": "/mcscanlan749.github.io/service-worker.js",
+    "static/css/main.330dcd2a.chunk.css.map": "/mcscanlan749.github.io/static/css/main.330dcd2a.chunk.css.map",
+    "static/js/2.66198967.chunk.js.LICENSE.txt": "/mcscanlan749.github.io/static/js/2.66198967.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a1c2e09.js",
+    "static/js/2.66198967.chunk.js",
+    "static/css/main.330dcd2a.chunk.css",
+    "static/js/main.c6206f41.chunk.js"
+  ]
+}
